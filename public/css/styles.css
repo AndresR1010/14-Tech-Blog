@@ -1,0 +1,104 @@
+:root{
+    --brown: #4b3027;
+    --white: #eff4fb;
+    --dark: #4e5091;
+    --light: #6360bc;
+}
+
+body, .container-fluid{
+    background-color: var(--light);
+}
+
+.navbar{
+    border: 10px solid var(--light);
+    background-color: var(--white);
+    font-family: 'Chivo', sans-serif;
+}
+
+a{
+    color: var(--dark);
+    margin-left: 10px;
+}
+
+
+.navbar-brand {
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.nav-link:active, .nav-link:hover, h1 {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.navbar-brand:hover{
+    color: var(--dark);
+}
+
+button:focus{
+    outline: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(78, 80, 145)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.card{
+    border-radius: 0px;
+    border: 5px solid var(--white);
+    background-color: var(--light);
+    color: var(--white);
+    margin: 10px;
+}
+
+.card h4{
+    margin: 0px;
+}
+
+.card h4, .card h6{
+    background-color: var(--white);
+    color: var(--light);
+    padding: 5px 0px 0px 5px;
+}
+
+.card h6{
+    padding-bottom: 5px;
+}
+
+.card-body{
+    padding: 0%;
+}
+
+.card-text{
+    padding: 10px;
+}
+
+.card p{
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+input{
+    padding: 10px;
+}
+
+label{
+    font-size: x-large;
+}
+
+.form-input{
+    border: none;
+}
+
+.form-input, .form-input:active{
+    border: none;
+    outline: none;
+    color: var(--dark);
+}
+
+.btn{
+    color: var(--light);
+    font-weight: bold;
+    border-radius: 0px;
+}
