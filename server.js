@@ -12,22 +12,10 @@ const PORT = process.env.PORT || 3001;
 
 const hbs = exphbs.create({ helpers });
 
-const sess = {
-  secret: process.env.DB_SESSION_SECRET,
-  cookie: {},
-  resave: false,
-  saveUninitialized: true,
-  store: new SequelizeStore({
-      db: sequelize,
-      checkExpirationInterval: 1000 * 60 * 10, // will check every 10 minutes
-      expiration: 1000 * 60 * 30 // will expire after 30 minutes
-  })
-};
-
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
-app.use(session(sess));
+// app.use(session(sess));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use(express.urlencoded({
